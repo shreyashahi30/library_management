@@ -38,3 +38,68 @@ library_management/
 ├── app.py                  # Main application entry point
 └── README.md               # Documentation
 
+## Setup Instructions
+
+## Prerequisites
+- Python 3.8 or later installed on your system.
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/library-management-system.git
+    cd library-management-system
+    ```
+
+2. Create a virtual environment:
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    pip install flask
+    ```
+
+4. Run the application:
+
+    ```bash
+    python app.py
+    ```
+
+    The app will run on `http://127.0.0.1:5000`.
+
+## API Endpoints
+
+### Authentication
+All routes require a valid token:
+- **Header**: `Authorization: secure_token`
+
+## Books
+| Method | Endpoint            | Description                           |
+|--------|---------------------|---------------------------------------|
+| POST   | /api/books           | Add a new book.                       |
+| GET    | /api/books           | List all books with pagination.       |
+| GET    | /api/books/<id>      | Get details of a specific book.       |
+| PUT    | /api/books/<id>      | Update an existing book.              |
+| DELETE | /api/books/<id>      | Delete a book.                        |
+
+## Members
+| Method | Endpoint            | Description                           |
+|--------|---------------------|---------------------------------------|
+| POST   | /api/members         | Add a new member.                     |
+| GET    | /api/members         | List all members with pagination.     |
+| GET    | /api/members/<id>    | Get details of a specific member.     |
+| PUT    | /api/members/<id>    | Update an existing member.            |
+| DELETE | /api/members/<id>    | Delete a member.                      |
+
+## Testing
+Run tests using `unittest`:
+
+```bash
+python -m unittest discover tests
+
