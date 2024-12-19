@@ -37,9 +37,5 @@ library_management/
 │   ├── test_auth.py        # Authentication tests
 ├── app.py                  # Main application entry point
 └── README.md               # Documentation
-## Testing
-Run tests using `unittest`:
 
-```bash
-python -m unittest discover tests
 
