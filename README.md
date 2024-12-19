@@ -35,7 +35,8 @@ library_management/
 │   ├── test_members.py     # Member model tests
 │   ├── test_auth.py        # Authentication tests
 ├── app.py                  # Main application entry point
-└── README.md               # Documentation```
+└── README.md               # Documentation
+```
 
 ## Setup Instructions
 
