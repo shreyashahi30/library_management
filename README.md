@@ -47,7 +47,7 @@ library_management/
 
 1. Clone the repository:
 bash
-    git clone https://github.com/shreyashahi30/library-management-system.git
+    git clone https://github.com/shreyashahi30/library_management.git
     cd library-management-system
     
 2. Create a virtual environment:
