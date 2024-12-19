@@ -13,6 +13,7 @@ An advanced Flask-based Library Management System implementing modular design, t
 ---
 
 ## Project Structure
+```plaintext
 library_management/
 ├── app/
 │   ├── __init__.py         # Flask app initialization
@@ -45,7 +46,7 @@ library_management/
 
 1. Clone the repository:
 bash
-    git clone https://github.com/your-username/library-management-system.git
+    git clone https://github.com/shreyashahi30/library-management-system.git
     cd library-management-system
     
 2. Create a virtual environment:
