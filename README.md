@@ -37,7 +37,7 @@ library_management/
 │   ├── test_auth.py        # Authentication tests
 ├── app.py                  # Main application entry point
 └── README.md               # Documentation
-
+```plaintext
 ## Setup Instructions
 
 ### Prerequisites
