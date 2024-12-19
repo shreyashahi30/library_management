@@ -93,3 +93,21 @@ All routes require a valid token:
 Run tests using `unittest`:
 bash
 python -m unittest 
+
+## Design Choices
+
+- **Modular Structure**: The application follows a modular design with separate directories for models, services, routes, and utils. This enhances maintainability and scalability.
+- **Token-Based Authentication**: Middleware is used to ensure that all routes are protected with a valid token, providing secure access to the API.
+- **In-Memory Database**: For simplicity and ease of testing, the app uses an in-memory database. This allows for quick prototyping but would need to be replaced by a proper database in a production environment.
+
+## Assumptions and Limitations
+
+### Assumptions:
+- The app is designed to handle small to medium-sized datasets due to its in-memory database. In a real-world scenario, this would be replaced by a more robust database.
+- The authentication mechanism assumes the token is fixed (`"secure_token"`). A more scalable authentication system (like OAuth) could be considered for a production-level application.
+
+### Limitations:
+- **In-Memory Database**: The app uses an in-memory database, meaning data is not persistent across restarts.
+- **Basic Token Authentication**: The token-based authentication is simplistic and lacks advanced features like token expiration, which would be essential in a production system.
+- **No Advanced Features**: Features like user roles, advanced filtering, and real-time updates are not included in this version.
+
