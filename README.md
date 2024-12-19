@@ -92,5 +92,4 @@ All routes require a valid token:
 ### Testing
 Run tests using `unittest`:
 bash
-python -m unittest discover tests do this in proper github readme format as well?
-
+python -m unittest 
